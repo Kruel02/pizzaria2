@@ -2,13 +2,14 @@
     require_once("./../Config/config.php");
 
  
- $_POST['ValorPizza'] = str_replace(',','.', $_POST['ValorPizza']);
- var_dump($_POST['ValorPizza']); 
+ 
  $NomePizza = filter_input(INPUT_POST,'NomePizza', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
- $ValorPizza = filter_input(INPUT_POST, 'ValorPizza',FILTER_VALIDATE_FLOAT);
- var_dump($ValorPizza);
+// $ValorPizza = filter_input(INPUT_POST, 'ValorPizza',FILTER_VALIDATE_FLOAT);
+ //var_dump($ValorPizza);
  $TamanhoPizza = filter_input(INPUT_POST, 'TamanhoPizza', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
  $DescricaoPizza = $_POST['DescricaoPizza'];
+ $ValorPizza = floatval(str_replace(',', '.',  $_POST['ValorPizza']));
+ var_dump($ValorPizza);
  
 
   if($NomePizza && $ValorPizza && $TamanhoPizza)
