@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,13 +7,13 @@
     <title>Document</title>
     
     <main>
-        <form action="./../App/Pages/Gerenciar.php" method="post">
+        <form action="./Gerenciar_Action.php" method="post">
 
 
             <div class="Form-item" >
                 <label for="">Nome da pizza</label>
                 <input type="text" name="BuscarPizza" id="Buscar-Pizza">
-                <input type="submit" value="Buscar" name="Buscarpizza" id="">
+                <input type="button" value="Buscar" name="Buscarpizza" id="">
 
             </div>
 
