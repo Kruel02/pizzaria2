@@ -1,0 +1,32 @@
+@font-face {
+    font-family: "inter Bold";
+    src: url(./../fontes/Inter-Bold.ttf);
+}
+
+@font-face {
+    font-family: "inter Light";
+    src: url(./../fontes/Inter-Light.ttf);
+}
+
+@font-face {
+    font-family: "inter Regular";
+    src: url(./../fontes/Inter-Regular.ttf);
+}
+:root{
+    --font-bold: "inter Bold";
+    --font-regular: "inter Regular";
+    --font-light: "inter Light";
+    
+    --color-preto: #000;
+    --color-branco: #fff;
+    --color-cinza-claro: #eee;
+    --color-cinza-escuro: #d9d9d9;
+    --color-sucesso: #48d05f;
+    --color-danger: #e92929;
+    --color-azul-claro: #e5f4ff;
+    --color-azul-escuro: #1298f8;
+    --color-azul-mt-escuro: #0d74be;
+
+    font-size: 16px;
+}
+
