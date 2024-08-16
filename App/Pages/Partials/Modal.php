@@ -1,3 +1,10 @@
+<?PHP
+Require "./../../config/config.php";
+
+?>
+
+
+
 <div class="bkg-modal">
         <div class="modal">
 
@@ -50,6 +57,7 @@
         </div>
     </div>
     </div>
+    <script src = "echo $base?>/Assets/js/main.js"></script>
     <br>
    
 

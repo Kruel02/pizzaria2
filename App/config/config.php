@@ -1,4 +1,5 @@
 <?php
+$base = "http://localhost/prjPizzaria/App/";
 $db_host = "127.0.0.1";
 $db_port = 3310;
 $db_name = "pizzaria_db";

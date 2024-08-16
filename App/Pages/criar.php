@@ -1,3 +1,9 @@
+<?php
+require_once("./../Config/config.php");
+require_once("./../Pages/Partials/Header.php");
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
