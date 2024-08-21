@@ -1,5 +1,5 @@
 <?PHP
-Require "./../../config/config.php";
+//Require "./../../config/config.php";
 
 ?>
 

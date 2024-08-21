@@ -1,63 +1,39 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width= initial-scale=1.0">
-    <title>Document</title>
-    
-    <main>
-        <form action="./Gerenciar_Action.php" method="post">
-
-
-            <div class="Form-item" >
-                <label for="">Nome da pizza</label>
-                <input type="text" name="BuscarPizza" id="Buscar-Pizza">
-                <input type="button" value="Buscar" name="Buscarpizza" id="">
-
-            </div>
-
-            <div class="Form-item" >
-                <label for="">Nome da pizza</label>
-                <input type="text" name="NomePizza" id="Nome-Pizza">
-
-            </div>
-            <div class="Form-item" >
-                <label for="Valor-Pizza">Valor R$</label>
-                <input type="text" name="ValorPizza" id="Valor-Pizza">
-
-            </div>
-
-            <div class="Form-item" >
-                <label for="Tamanho-Pizza">Tamanho </label>
-                <input type="text" name="TamanahoPizza" id="Tamanho-Pizza">
-
-            </div>
-
-            <div class="Form-item" >
-                <label for="Descricao-pizza">Descrição</label>
-                <textarea type="text" name="DescricaoPizza" id="descricao-Pizza" cols="30" rows="30"></textarea>
-
-            </div>
-            <div>
-
-                <input type="button" value="Salvar/Alterar">
-                <input type="button" value="Salvar/Alterar">
-
-            </div>
-
-
-
-        </form>
-
-
-
-
-
-</main>
-,
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciar Pizza</title>
 </head>
 <body>
-    
+    <main>
+        <form action="./gerenciar_action.php" method="post">
+            <div class="form-item">
+                <label for="pizzaByscada">Buscar Pizza</label>
+                <input type="text" name="PizzaBuscada" id="pizza-buscada">
+                <input type="submit"  name="btn-action" value="Buscar">
+            </div>
+            <div class="form-item">
+                <label for="nome-pizza">Nome da Pizza:</label>
+                <input type="text" name="nomePizza" id="nome-pizza">
+            </div>
+            <div class="form-item">
+                <label for="valor-pizza">Valor R$:</label>
+                <input type="text" name="valorPizza" id="valor-pizza">
+            </div>
+            <div class="form-item">
+                <label for="tamanho-pizza">Tamanho:</label>
+                <input type="text" name="tamanhoPizza" id="tamanho-pizza">
+            </div>
+            <div class="form-item">
+                <label for="descricao-pizza">Descrição:</label>
+                <textarea name="descricaoPizza" id="descricao" cols="50" rows="10"></textarea>
+            </div>
+            <div>
+                <input type="submit" name="btn-action" value="Alterar">
+                <input type="submit" name="btn-action" value="Excluir">
+            </div>
+        </form>
+    </main>    
 </body>
 </html>

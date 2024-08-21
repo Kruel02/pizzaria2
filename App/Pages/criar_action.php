@@ -4,7 +4,8 @@ use Money\Currency;
 use Money\Money;
 
     require_once("./../Config/config.php");
-    
+    require_once("./../Pages/Partials/Header.php");
+    require_once ("././/Partials/Modal.php");
     
 
   
@@ -61,6 +62,7 @@ use Money\Money;
     $sql->bindValue(":PathFoto", "https://www.pizzaprime.com.br/wp-content/uploads/2019/10/massa-de-pizza.jpeg") ;
     $sql->execute();
     //header("Location: ./../index.php");
+    require_once ("./../Pages/Partials/Footer.php");
     
     exit();
     
@@ -70,5 +72,6 @@ use Money\Money;
 
 
   }
+  
   
 
