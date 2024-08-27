@@ -26,7 +26,8 @@ if($sql-> rowCount()>0)
     
     foreach($dados as $key => $Value):?>
     <tr>
-    <td><?php echo $Value['IdPizza']?></td>
+    <td><?php echo (int)$Value['IdPizza']?></td>
+       <?php var_dump($Value['IdPizza'])?> 
         <td><?php echo $Value['NomePizza']?></td>
         <td><?php echo $Value['Valor']?></td>
         <td><?php echo $Value['Tamanho']?></td>
